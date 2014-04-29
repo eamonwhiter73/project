@@ -67,13 +67,6 @@ body {
   background-color: #e5e5e5;
 }
 
-.answerbox {
-  position: absolute;
-  top: 400px;
-  width: 730px;
-  height: 40px;
-}
-
 .mycont {
   position: relative;
 }
@@ -86,7 +79,7 @@ body {
 
 .buttonbox {
   position: absolute;
-  top: 525px;
+  top: 550px;
   left: 595px;
 }
 
@@ -108,7 +101,7 @@ body {
   text-align: center;
   vertical-align: top;
   width: 100%;
-  background-color: #e5e5e5;
+  background-color: #6666A3;
 }
 
 /* Customize container */
