@@ -1,0 +1,39 @@
+<div ng-include="'partials/navbar'"></div>
+
+<form name="answerform" novalidate>
+
+	<div class="mycont">
+		<div class="box1">
+			<div ng-click="removeadd(thing)" ng-repeat="thing in awesomeThings | filter : {number : 0, putt : false} track by $index">
+				<h4>{{thing.name}}</h4>
+			</div>
+		</div>
+		<div class="box2">
+			<div ng-click="removeadd(thing)" ng-repeat="thing in awesomeThings | filter : {number : 1, putt : false} track by $index">
+				<h4>{{thing.name}}</h4>
+			</div>
+		</div>
+		<div class="box3">
+			<div ng-click="removeadd(thing)" ng-repeat="thing in awesomeThings | filter : {number : 2, putt : false} track by $index">
+				<h4>{{thing.name}}</h4>
+			</div>
+		</div>
+		<div class="box4">
+			<div ng-click="removeadd(thing)" ng-repeat="thing in awesomeThings | filter : {number : 3, putt : false} track by $index">
+				<h4>{{thing.name}}</h4>
+			</div>
+		</div>
+		<div class="mycont2">
+			<div class="aligncenter">
+				<h4>Your Sentence:</h4>
+			</div>
+			<div ng-click="putback(thing)" ng-repeat="thing in awesomeThings | filter : {putt : true} track by $index" ng-class-even="'column1'" ng-class-odd="'column2'">
+				<h4>{{thing.name}}</h4>
+			</div>
+		</div>
+	</div>
+    <div class="buttonbox">
+    	<button class="btn btn-lg btn-primary" type="submit">Answer</button>
+    </div>
+</form>
+
